@@ -1,2 +1,2 @@
-# Binar Challange Chapter 4
-# javaScript
+Binar Challange Chapter 4
+javaScript
