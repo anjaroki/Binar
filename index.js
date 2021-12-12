@@ -1,3 +1,9 @@
+//variabel yang di embed dari id html
+const pBatu = document.getElementById("batu");
+const pKertas = document.getElementById("kertas");
+const pGunting = document.getElementById("gunting");
+
+//mencari value computer secara rendom
 function getPilihanComputer() {
   const comp = Math.random();
   if (comp < 0.34) return "batu";
@@ -5,6 +11,7 @@ function getPilihanComputer() {
   return "gunting";
 }
 
+//formula aturan permainan
 function getHasil(comp, player) {
   if (player === comp) return "draw";
   if (player === "batu") return comp === "gunting" ? "player1win" : "comwin";
@@ -12,62 +19,83 @@ function getHasil(comp, player) {
   if (player === "kertas") return comp === "batu" ? "player1win" : "comwin";
 }
 
-const pBatu = document.querySelector("#batu");
-pBatu.addEventListener("click", function () {
-  document.querySelector("#latarBatu").classList.add("border");
+//aksi batu
+function pilBatu() {
+  document.querySelector("#latarBatu").classList.add("item-box");
+
+  pKertas.removeAttribute("onClick");
+  pGunting.removeAttribute("onClick");
+
   const pilihanComputer = getPilihanComputer();
   const pilihanPlayer = pBatu.id;
   const hasil = getHasil(pilihanComputer, pilihanPlayer);
+
   document.querySelector(".picHasil").setAttribute("src", "assets/" + hasil + ".png");
+
   if (pilihanComputer == "batu") {
-    document.querySelector("#latarBatuC").classList.add("border");
+    document.querySelector("#latarBatuC").classList.add("item-box");
   } else if (pilihanComputer == "kertas") {
-    document.querySelector("#latarKertasC").classList.add("border");
+    document.querySelector("#latarKertasC").classList.add("item-box");
   } else if (pilihanComputer == "gunting") {
-    document.querySelector("#latarGuntingC").classList.add("border");
+    document.querySelector("#latarGuntingC").classList.add("item-box");
   }
 
-  console.log("player : " + pilihanPlayer);
-  console.log("comp : " + pilihanComputer);
-  console.log("hasil: " + hasil);
-});
+  //untuk cek isi variabel di console broswer
+  // console.log("player : " + pilihanPlayer);
+  // console.log("comp : " + pilihanComputer);
+  // console.log("hasil: " + hasil);
+}
 
-const pKertas = document.querySelector("#kertas");
-pKertas.addEventListener("click", function () {
-  document.querySelector("#latarKertas").classList.add("border");
+//aksi kertas
+function pilKertas() {
+  document.querySelector("#latarKertas").classList.add("item-box");
+
+  pBatu.removeAttribute("onClick");
+  pGunting.removeAttribute("onClick");
+
   const pilihanComputer = getPilihanComputer();
   const pilihanPlayer = pKertas.id;
   const hasil = getHasil(pilihanComputer, pilihanPlayer);
+
   document.querySelector(".picHasil").setAttribute("src", "assets/" + hasil + ".png");
+
   if (pilihanComputer == "batu") {
-    document.querySelector("#latarBatuC").classList.add("border");
+    document.querySelector("#latarBatuC").classList.add("item-box");
   } else if (pilihanComputer == "kertas") {
-    document.querySelector("#latarKertasC").classList.add("border");
+    document.querySelector("#latarKertasC").classList.add("item-box");
   } else if (pilihanComputer == "gunting") {
-    document.querySelector("#latarGuntingC").classList.add("border");
+    document.querySelector("#latarGuntingC").classList.add("item-box");
   }
 
-  console.log("player : " + pilihanPlayer);
-  console.log("comp : " + pilihanComputer);
-  console.log("hasil: " + hasil);
-});
+  // //untuk cek isi variabel di console broswer
+  // console.log("player : " + pilihanPlayer);
+  // console.log("comp : " + pilihanComputer);
+  // console.log("hasil: " + hasil);
+}
 
-const pGunting = document.querySelector("#gunting");
-pGunting.addEventListener("click", function () {
-  document.querySelector("#latarGunting").classList.add("border");
+//aksi gunting
+function pilGunting() {
+  document.querySelector("#latarGunting").classList.add("item-box");
+
+  pKertas.removeAttribute("onClick");
+  pBatu.removeAttribute("onClick");
+
   const pilihanComputer = getPilihanComputer();
   const pilihanPlayer = pGunting.id;
   const hasil = getHasil(pilihanComputer, pilihanPlayer);
+
   document.querySelector(".picHasil").setAttribute("src", "assets/" + hasil + ".png");
+
   if (pilihanComputer == "batu") {
-    document.querySelector("#latarBatuC").classList.add("border");
+    document.querySelector("#latarBatuC").classList.add("item-box");
   } else if (pilihanComputer == "kertas") {
-    document.querySelector("#latarKertasC").classList.add("border");
+    document.querySelector("#latarKertasC").classList.add("item-box");
   } else if (pilihanComputer == "gunting") {
-    document.querySelector("#latarGuntingC").classList.add("border");
+    document.querySelector("#latarGuntingC").classList.add("item-box");
   }
 
-  console.log("player : " + pilihanPlayer);
-  console.log("comp : " + pilihanComputer);
-  console.log("hasil: " + hasil);
-});
+  //untuk cek isi variabel di console broswer
+  // console.log("player : " + pilihanPlayer);
+  // console.log("comp : " + pilihanComputer);
+  // console.log("hasil: " + hasil);
+}

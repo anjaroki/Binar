@@ -6,8 +6,8 @@ body {
 }
 
 #kertas #kertasC #batu #batuC #gunting #guntingC {
-  width: 10vh;
-  height: 10vh;
+  width: 150px;
+  height: 150px;
 }
 
 .color-size-nav {
@@ -30,11 +30,11 @@ body {
   color: #bd0000;
 }
 
-.border {
+.item-box {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 223px !important;
+  width: 223px;
   height: 204px;
   background-color: #c4c4c4;
   border-radius: 30px;
