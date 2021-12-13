@@ -2,12 +2,7 @@ body {
   background-color: #9c835f;
   margin: 0;
   padding: 0;
-  zoom: 0.6;
-}
-
-#kertas #kertasC #batu #batuC #gunting #guntingC {
-  width: 150px;
-  height: 150px;
+  zoom: 0.52;
 }
 
 .color-size-nav {
@@ -21,13 +16,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 36px;
   font-weight: 900;
-}
-
-.text-main {
-  font-family: "Open Sans", sans-serif;
-  font-size: 144px;
-  font-weight: bold;
-  color: #bd0000;
 }
 
 .item-box {

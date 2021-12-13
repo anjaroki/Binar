@@ -35,55 +35,90 @@
           </div>
         </nav>
       </div>
-      <!-- halaman -->
-      <div class="container">
-        <div class="container text-center mt-5">
-          <div class="row">
-            <div class="col">
-              <h1 class="text-nav">PLAYER 1</h1>
-            </div>
-            <div class="col"></div>
-            <div class="col">
-              <h1 class="text-nav">COM</h1>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div id="latarBatu" class="col">
-              <img src="assets/batu.png" id="batu" onClick="pilBatu()" />
-            </div>
-            <div class="col"></div>
-            <div id="latarBatuC" class="col">
-              <img src="assets/batu.png" id="batuC" alt="" srcset="" />
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div id="latarKertas" class="col">
-              <img src="assets/kertas.png" id="kertas" onClick="pilKertas()" />
-            </div>
-            <div class="col">
-              <img src="assets/VS.png" class="picHasil" />
-            </div>
-            <div id="latarKertasC" class="col">
-              <img src="assets/kertas.png" id="kertasC" alt="" srcset="" />
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div id="latarGunting" class="col">
-              <img src="assets/gunting.png" id="gunting" onClick="pilGunting()" />
-            </div>
-            <div class="col"></div>
-            <div id="latarGuntingC" class="col">
-              <img src="assets/gunting.png" id="guntingC" alt="" srcset="" />
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col"></div>
-            <div class="col">
-              <img onclick="window.location.reload()" src="assets/refresh.png" alt="" srcset="" />
-            </div>
-            <div class="col"></div>
+      <!-- Baris 1-->
+      <div class="row text-content text-black m-5">
+        <div class="col d-flex justify-content-center"></div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <h1 class="text-nav">PLAYER 1</h1>
+        </div>
+        <div class="col d-flex justify-content-center"></div>
+        <div class="col d-flex justify-content-center">
+          <h1 class="text-nav">COM</h1>
+        </div>
+        <div class="col d-flex justify-content-center"></div>
+      </div>
+
+      <!-- Baris 2-->
+      <div class="row m-2 p-2 mt-5">
+        <div class="col d-flex justify-content-center"></div>
+        <!-- Player 1 -->
+        <div class="col d-flex justify-content-center align-items-center">
+          <div id="latarBatu" class="d-flex align-items-center justify-content-center">
+            <img id="batu" src="assets/batu.png" onclick="pilBatu()" />
           </div>
         </div>
+        <div class="col d-flex justify-content-center"></div>
+        <!-- Player COM -->
+        <div class="col d-flex justify-content-center align-items-center">
+          <div id="latarBatuC" class="d-flex align-items-center justify-content-center">
+            <img id="batuC" src="assets/batu.png" />
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center"></div>
+      </div>
+
+      <!-- Baris 3-->
+      <div class="row m-2 p-2 mt-5">
+        <div class="col d-flex justify-content-center align-items-center"></div>
+        <!-- Player 1 -->
+        <div class="col d-flex justify-content-center align-items-center align-items-center">
+          <div id="latarKertas" class="d-flex align-items-center justify-content-center">
+            <img id="kertas" src="assets/kertas.png" onclick="pilKertas()" />
+          </div>
+        </div>
+        <!-- Hasil -->
+        <div class="col d-flex justify-content-center align-items-center align-items-center">
+          <div>
+            <img src="assets/VS.png" class="picHasil" />
+          </div>
+        </div>
+        <!-- Player COM -->
+        <div class="col d-flex justify-content-center align-items-center align-items-center">
+          <div id="latarKertasC" class="d-flex align-items-center justify-content-center">
+            <img id="kertasC" src="assets/kertas.png" />
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center"></div>
+      </div>
+
+      <!-- Baris 4-->
+      <div class="row m-2 P-2 mt-5">
+        <div class="col d-flex justify-content-center"></div>
+        <!-- Player 1 -->
+        <div class="col d-flex justify-content-center align-items-center">
+          <div id="latarGunting" class="d-flex align-items-center justify-content-center">
+            <img id="gunting" src="assets/gunting.png" onclick="pilGunting()" />
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center"></div>
+        <!-- Player COM -->
+        <div class="col d-flex justify-content-center align-items-center align-items-center">
+          <div id="latarGuntingC" class="d-flex align-items-center justify-content-center">
+            <img id="guntingC" src="assets/gunting.png" />
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center"></div>
+      </div>
+
+      <!-- Baris 5-->
+      <div class="row m-2 mt-5">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col d-flex justify-content-center">
+          <img onclick="window.location.reload()" src="assets/refresh.png" />
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
       </div>
     </div>
     <script src="index.js"></script>
