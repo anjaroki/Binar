@@ -68,12 +68,16 @@ v1.post("/login", (req, res) => {
   if (!userFound) {
     // console.log("gagal");
     res.redirect("login");
+    message: "data belum ada";
+    massageClass: "alert-danger";
   } else if (userFound.password == password) {
     // console.log("berhasil");
     res.redirect("/play");
   } else {
     // console.log("belum punya");
     res.redirect("login");
+    message: "password yang anda masukan salah";
+    massageClass: "alert-danger";
   }
 });
 
