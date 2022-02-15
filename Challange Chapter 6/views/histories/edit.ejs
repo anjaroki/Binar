@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>editform</title>
+  </head>
+  <body>
+    <h2>Form Edit</h2>
+    <form action="/histories/<%= data.id %>/edit" method="POST">
+      User: <br />
+      <input type="text" , name="user" value="<%=data.user%>" /><br />
+      Win:<br />
+      <input type="text" , name="win" value="<%=data.win%>" /><br />
+      Lose:<br />
+      <input type="text" , name="lose" value="<%=data.lose%>" /><br />
+      Draw:<br />
+      <input type="text" , name="draw" value="<%=data.draw%>" /><br />
+      <br />
+      <input type="submit" /><br />
+    </form>
+  </body>
+</html>

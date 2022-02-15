@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>editform</title>
+  </head>
+  <body>
+    <h2>Form Edit</h2>
+    <form action="/biodata/<%= data.id %>/edit" method="POST">
+      User: <br />
+      <input type="text" , name="user" value="<%=data.user%>" /><br />
+      Password:<br />
+      <input type="text" , name="password" value="<%=data.password%>" /><br />
+      <br />
+      <input type="submit" /><br />
+    </form>
+  </body>
+</html>
